@@ -33,9 +33,9 @@ class PythonRunner {
 
             console.log(
                 this._pyodide.runPython(`
-            import sys
-            sys.version
-        `)
+                    import sys
+                    sys.version
+                `)
             );
 
             this._pyodide.runPython('print("Hello from Python!")');

@@ -30,9 +30,13 @@ function App() {
           <button
             onClick={() => {
               pyodide.setOutput((text) => {
-                setPyoutput((prev) => (prev ? prev + '\n' + text : text))
+                setPyoutput(text);
+                // setPyoutput((prev) => (prev ? prev + '\n' + text : text))
               });
               console.log("clicked", pyprompt);
+              pyodide.run(`
+                  globals().clear()
+              `)
               pyodide.run(pyprompt);
             }}
           >
