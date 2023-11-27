@@ -3,6 +3,18 @@ A webapp to run python code in the browser using [Pyodide](https://pyodide.org/e
 
 ## Usage
 
+Clone the repository:
+```
+git clone https://github.com/aaryadav/codepaneer.git
 ```
 
+Then cd into the project directory and install dependencies:
+```
+cd my-project
+npm install
+```
+
+Start the development server:
+```
+npm run dev
 ```
