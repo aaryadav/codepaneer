@@ -10,7 +10,7 @@ git clone https://github.com/aaryadav/codepaneer.git
 
 Then cd into the project directory and install dependencies:
 ```
-cd my-project
+cd codepaneer
 npm install
 ```
 
